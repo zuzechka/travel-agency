@@ -364,7 +364,7 @@ body {
   color: var(--color-dark);
   font-family: var(--font-family-heading);
   font-size: 17px;
-  font-weight: 700px;
+  font-weight: 500;
   text-decoration: none;
   margin-top: 9px;
   transition-duration: var(--transition-duration);
@@ -384,7 +384,7 @@ body {
 .header-nav-actions-button {
   width: 102px;
   height: 40px;
-  background-color: var(--color-light);
+  background-color: var(--color-light-pink);
   border-radius: 5px;
   border: 1px solid var(--color-dark);
   font-family: var(--font-family-heading);
@@ -397,7 +397,7 @@ body {
 
 .header-nav-actions-button:hover {
   background-color: var(--color-light-blue);
-  color: var(--color-light);
+  color: var(--color-light-pink);
   border: 1px solid var(--color-light-blue);
 }
 
@@ -414,6 +414,7 @@ body {
   margin-top: 9px;
   transition-duration: var(--transition-duration);
   text-transform: uppercase;
+  background-color: var(--color-light-pink);
 }
 
 .header-nav-sections-lang:hover {
@@ -601,9 +602,54 @@ body {
     margin-left: 0;
   }
 
+ .header-main {
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  flex-wrap: wrap;
+
+ }
+
+ .header-main-img-plane-left {
+  display: none;
+ }
+ .header-main-img-plane-rigth {
+  display: none;  
+ }
+
+ .header-main-img-tourist {
+  display: none;
+ }
+
+ .header-main-content {
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+}
+.header-decore {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  justify-content: space-between;
 }
 
+@media (max-width: 600px) {
+  
+  .header-main-h2{
+    font-size:70px;
+  }
+}
 
+@media (max-width: 505px) {
+  .header-main-p{
+    margin-top: 100px;
+  }
+
+  .header-main-content-decore{
+    display: none;
+ }
+}
 
 @media (max-width: 479px) {
   .header-nav {
@@ -618,6 +664,7 @@ body {
   .header-nav-actions {
     gap: 15px;
   }
+ 
 }
 
 @media (max-width: 388px) {
@@ -626,6 +673,8 @@ body {
   flex-basis: 100%;
   margin-inline: auto;
  }
+
+
 }
 
 @media (max-width: 380px) {
@@ -639,6 +688,10 @@ body {
   .header-nav-logo {
   margin-inline: auto;
  }  
+
+ .header-main-h{
+  margin-top: 200px;
+ }
  }
 
 
