@@ -323,8 +323,10 @@ body {
 
 .main {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  padding-inline: 15px;
+  flex-direction: column;
 }
 
 .header-nav {
@@ -605,9 +607,7 @@ body {
   z-index: 0;
   width: 100%;
   justify-content: space-between;
-  margin-top: 0;
-  margin-left: 0;
-  
+
 }
 
 .services {
@@ -726,6 +726,85 @@ body {
   max-width: 1228px;
 }
 
+.top-selling {
+  width: 100%;
+  max-width: 1102px;
+  height: 100%;
+  min-height: 617px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.subheading {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-light-blue);
+}
+
+.destinations {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+
+.destination {
+  width: 315px;
+  height: 457px;
+  position: relative;
+  border-radius: 24px;
+  transition-duration: var(--transition-duration);
+}
+
+.destination:hover {
+   box-shadow: 0px 100px 80px rgb(0, 0, 0, 0.05);
+}
+.destination-card {
+  width: 315px;
+  height: 130px;
+  background-color: var(--color-light);
+  position: absolute;
+  margin-top: 327px;
+  border-radius: 0px 0px 24px 24px;
+  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.dest-card {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  color:var(--color-light-blue);
+  margin-left: 19px;
+  margin-top: 27px;
+}
+
+.price {
+  margin-left: 120px;
+}
+
+.dest-card-days{
+  display: flex;
+  margin-left: 22px;
+  margin-top: 20px;
+  gap:16px;
+}
+
+.dest-along {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+.decore-selling{
+  position: absolute;
+  margin-left: 1060px;
+  margin-top: 318px;
+}
+
+
 @media (max-width: 1060px) {
   .header-nav {
     width: 100%;
@@ -785,6 +864,15 @@ body {
  .header-decore {
   display: none;
  }
+ 
+ .categories {
+  flex-wrap: wrap;
+ }
+
+ .destinations {
+  flex-wrap: wrap;
+}
+
 }
 
 @media (max-width: 479px) {
