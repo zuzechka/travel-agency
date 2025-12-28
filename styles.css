@@ -756,6 +756,7 @@ body {
   position: relative;
   border-radius: 24px;
   transition-duration: var(--transition-duration);
+  box-shadow: 0px 100px 80px rgb(0, 0, 0, 0.02);
 }
 
 .destination:hover {
@@ -805,6 +806,241 @@ body {
 }
 
 
+
+.book-a-trip{
+  width: 100%;
+  max-width: 1114px;
+  height: 100%;
+  min-height: 492px;
+  margin-top: 186px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-a-trip-main {
+  max-width: 629px;
+
+}
+
+.heading-trip {
+  text-transform: capitalize;
+  max-width: 511px;
+}
+
+.values {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 395px;
+  height: 289px;
+  flex-wrap: wrap;
+  margin-top: 47px;
+}
+
+.value {
+  width: 395px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.group-value {
+  width: 47px;
+  height: 48px;
+  background-color: #F0BB1F;
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-value {
+  width: 338px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.values-h {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 124.5%;
+  color:var(--color-light-blue);
+}
+
+.values-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124.5%;
+  color:var(--color-light-blue);
+}
+
+.trip-2 {
+  background-color: #F15A2B;
+}
+
+.trip-3 {
+  background-color: #006380;
+}
+
+
+.book-a-trip-image {
+  width: 485px;
+  height: 489px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.image-trip {
+  width: 485px;
+  height: 400px;
+  position: relative;
+  z-index: 0;
+  border-radius: 26px;
+  z-index: 1;
+}
+
+.trip-img-1 {
+  width:370px;
+  height: 400px;
+  background-color: var(--color-light);
+  border-radius: 26px;
+  box-shadow: 0px 100px 80px rgb(0, 0, 0, 0.07);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124.5%;
+  letter-spacing: 0.15;
+  color: #000000;
+  display: inline-block;
+}
+
+.trip-1 {
+  margin-top: 26px;
+}
+
+.trip-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 124.5%;
+  letter-spacing: -0.005;
+  color: #84829A;
+  display: inline-block;
+}
+
+.trip-1-p {
+  margin-top: 13px;
+}
+
+.options-trip-1 {
+  width: 139px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.option-trip-1 {
+  width: 36px;
+  height: 36px;
+  background-color: #F5F5F5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trip-people {
+  width: 157px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.trip-people-p{
+  align-self: flex-end;
+}
+
+.trip-people-heart {
+  width: 320px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+}
+
+.trip-img-2 {
+  width: 263px;
+  height: 129px;
+  border-radius: 18px;
+  background-color: var(--color-light);
+  position: absolute;
+  z-index: 2;
+  margin-top: 217px;
+  margin-left: 207px;
+  box-shadow: 0px 100px 80px rgb(0, 0, 0, 0.07);
+}
+
+.trip-to-rome {
+  width: 180px;
+  height: 51px;
+  display: flex;
+  margin-left: 20px;
+  margin-top: 17px;
+  gap: 12px;
+}
+
+.trip-to-rome-p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 124.5%;
+  letter-spacing: -0.35;
+  color: #84829A;
+  display: inline-flex;
+}
+
+.trip-2-complete {
+  width: 158px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  margin-left: 82px;
+  gap:10px;
+}
+
+.complete-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 124.5%;
+  letter-spacing: -0.55;
+  color: #000;
+}
+
+.trip-decore {
+  width: 354px;
+  height: 367px;
+  margin-bottom: 100px;
+  border-radius: 50%;
+  background-color: #59B1E6;
+  position: absolute;
+  z-index: 1;
+  opacity: 40%;
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+  filter: blur(70px);
+}
+
 @media (max-width: 1060px) {
   .header-nav {
     width: 100%;
@@ -850,6 +1086,10 @@ body {
   .header-main-h2{
     font-size:70px;
   }
+
+  .book-a-trip{
+      flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 505px) {
@@ -872,6 +1112,11 @@ body {
  .destinations {
   flex-wrap: wrap;
 }
+
+.trip-img-2 {
+  margin-left: 150px;
+}
+
 
 }
 
