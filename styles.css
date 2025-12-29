@@ -1041,6 +1041,133 @@ body {
   filter: blur(70px);
 }
 
+
+
+.testimonials {
+  max-width: 1165px;
+  width: 100%;
+  min-height: 356px;
+  height: 100%;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials-main {
+  width: 496px;
+  height: 356px;
+}
+
+.subheading-testimonials {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.testimonials-decore {
+  width: 87px;
+  height: 12px;
+  margin-top: 98px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.testimonails-ellipse {
+  width: 12px;
+  height: 12px;
+  background-color: #E5E5E5;
+  border-radius: 50%;
+}
+
+.correct {
+  background-color: #39425D;
+}
+
+.testimonials-decore-pag{
+  width: 669px;
+  height: 356px;
+  position: relative;
+}
+
+.pagination {
+  width: 541px;
+  height: 279px;
+}
+
+.pagintastion-rect {
+  width: 504px;
+  height: 245px;
+  box-sizing: border-box;
+  padding: 33px;
+  background-color: var(--color-light);
+  border-radius: 10px;
+  box-shadow: 0px 100px 80px rgb(0, 0, 0, 0.07);
+  position: absolute;
+  z-index: 1;
+  margin-top: 34px;
+  margin-left: 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination-img {
+  position: absolute;
+  z-index: 2;
+}
+
+.pagination-p {
+  display: inline-block;
+  width: 402px;
+  height: 96px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-light-blue)
+}
+
+.pagination-name {
+  display: inline-block;
+  margin-top: 35px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-light-blue)
+}
+
+.pagination-location {
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-light-blue
+  );
+}
+
+.pagination-2 {
+  width: 502px;
+  height: 232px;
+  position: absolute;
+  z-index: 0;
+  background-color: var(--color-light);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.25);
+  padding: 33px;
+  box-sizing: border-box;
+  margin-top: 123px;
+  margin-left: 87px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination-name-2 {
+  margin-top: 130px;
+}
+
+.testimonials-vector{
+  position: absolute;
+  margin-left: 654px;
+  margin-top: 140px;
+}
+
+
 @media (max-width: 1060px) {
   .header-nav {
     width: 100%;
@@ -1078,6 +1205,7 @@ body {
   flex-wrap: wrap;
  }
 
+
 }
 
 
@@ -1089,6 +1217,11 @@ body {
 
   .book-a-trip{
       flex-wrap: wrap;
+  }
+
+  
+   .testimonials {
+    flex-wrap: wrap;
   }
 }
 
