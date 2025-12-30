@@ -1,4 +1,4 @@
-🌍##TRAVEL AGENCY
+🌍TRAVEL AGENCY
 
 Responsive static landing page for a travel agency, built based on a design layout using pure HTML and CSS.
 
